@@ -28,7 +28,7 @@
 <div class="toast" id="toast"></div>
 <script>
 'use strict';
-const API_URL = ''; // Paste your deployed Google Apps Script Web App URL ending in /exec
+const API_URL = 'https://script.google.com/macros/s/AKfycbw_lZMYT96l2pkx7Z3lSKYCrJEoCGTzqxmw1TvgT675Fdl-FwaJCj0-knfCEHwtsgA5/exec'; // Paste your deployed Google Apps Script Web App URL ending in /exec
 const $ = id => document.getElementById(id);
 let items = [], transactions = [], resources = [], locations = [], currentView = 'dashboard', toastTimer;
 const storedUser = (()=>{try{return JSON.parse(localStorage.getItem('tm_tracker_user')||'{}')}catch(e){return {}}})();
